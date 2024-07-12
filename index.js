@@ -27,3 +27,28 @@ const freelancers = [
     { name: "Jessica", price: 30, occupation: "Student" },
   ];
 
+
+//setInterval() for adding an interval
+/* const addShapeIntervalId = setInterval(addShape, 1000);
+function addShape() {
+    if (shapes.length >= maxShapes) {
+      clearInterval(addShapeIntervalId);
+    }
+  }
+  render();  */
+
+
+  
+/* adding randomizer
+  function addShape() {
+    const color = colors[Math.floor(Math.random() * colors.length)];
+  
+    // TODO: Randomize the size of the shape
+    const size = sizes[Math.floor(Math.random() * sizes.length)];
+    shapes.push({ color, size });
+    shapes.push({ color, size: "small" });
+  
+    render();
+  
+    // TODO: Stop adding shapes if we've reached the maximum number of shapes
+  } */
