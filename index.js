@@ -16,16 +16,6 @@ h2Elm.innerText = "Available Freelancers";
 console.log(h2Elm)
 document.querySelector('body').append(h2Elm)
 
-const tableElm = document.createElement('table')
-tableElm.setAttribute('id', 'table')
-console.log(tableElm)
-document.querySelector('body').append(tableElm)
-
-const trElm = document.createElement('tr')
-trElm.setAttribute('id', 'tr')
-console.log(trElm)
-document.querySelector('table').append(trElm)
-
 
 //insert cell adds a td into a table row
 const freelancers = [
@@ -37,11 +27,3 @@ const freelancers = [
     { name: "Jessica", price: 30, occupation: "Student" },
   ];
 
-
-  var table = document.getElementById("tblFreelance");
-  var tr = document.createElement("tr");
-  var td = document.createElement("td");
-  //set attributes via setAttribute()
-  //add subtable via createElement and appendCHild
-  tr.appendChild(td);
-  table.appendChild(tr);
