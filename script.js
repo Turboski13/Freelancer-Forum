@@ -64,6 +64,10 @@ indexesToShow.forEach(index => {
 table.append(tableBody)
 
 
+function updateThirdRow() = {
+    
+}
 
 
 
+setInterval(updateThirdRow, 1000);
