@@ -27,3 +27,65 @@ const freelancers = [
     { name: "Jessica", price: 30, occupation: "Student" },
   ];
 
+  function createTable() {
+    var table = document.createElement("table"); // creates a table element
+
+    // creates the header row and appends it to the table
+    var headerRow = table.insertRow();
+    headerRow.classList.add('firstRow');
+    var nameHeader = document.createElement("th");
+    nameHeader.innerText = "Name";
+    headerRow.appendChild(nameHeader);
+
+    var occupationHeader = document.createElement("th");
+    occupationHeader.innerText = "Occupation";
+    headerRow.appendChild(occupationHeader);
+
+    var priceHeader = document.createElement("th");
+    priceHeader.innerText = "Starting Price";
+    headerRow.appendChild(priceHeader);
+
+    // loops through the array to add the freelancer data
+    for (var i = 0; i < freelancers.length; i++) {
+        var row = table.insertRow();
+        var nameCell = row.insertCell();
+        nameCell.innerText = freelancers[i].name;
+
+        var occupationCell = row.insertCell();
+        occupationCell.innerText = freelancers[i].occupation;
+
+        var priceCell = row.insertCell();
+        priceCell.innerText = freelancers[i].price;
+    }
+
+    document.body.append(table);
+}
+
+createTable();
+
+
+
+//setInterval() for adding an interval
+/* const addShapeIntervalId = setInterval(addShape, 1000);
+function addShape() {
+    if (shapes.length >= maxShapes) {
+      clearInterval(addShapeIntervalId);
+    }
+  }
+  render();  */
+
+
+  
+/* adding randomizer
+  function addShape() {
+    const color = colors[Math.floor(Math.random() * colors.length)];
+  
+    // TODO: Randomize the size of the shape
+    const size = sizes[Math.floor(Math.random() * sizes.length)];
+    shapes.push({ color, size });
+    shapes.push({ color, size: "small" });
+  
+    render();
+  
+    // TODO: Stop adding shapes if we've reached the maximum number of shapes
+  } */
