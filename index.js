@@ -63,7 +63,10 @@ const freelancers = [
 
 createTable();
 
-
+function randomNumber (2, 6) 
+    {
+        var random =  Math.floor((Math.random() * (6 - 2) + 2))/100;
+    }
 
 //setInterval() for adding an interval
 /* const addShapeIntervalId = setInterval(addShape, 1000);
