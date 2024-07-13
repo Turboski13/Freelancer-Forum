@@ -63,4 +63,19 @@ indexesToShow.forEach(index => {
 
 table.append(tableBody)
 
+function calculateAveragePrice() {
+    // Filter the initialpeople array based on indexesToShow
+    const displayedPrices = indexesToShow.map(index => {
+        // Extract price and convert it to a number
+        return parseFloat(initialpeople[index].price.replace('$', ''));
+    });
 
+    // Calculate the average price
+    const total = displayedPrices.reduce((acc, price) => acc + price, 0);
+    const average = total / displayedPrices.length;
+
+    // Update the average string element with the average price
+    avgerageString.innerText = `The average starting price is $${average.toFixed(2)}`;
+}
+
+calculateAveragePrice();
