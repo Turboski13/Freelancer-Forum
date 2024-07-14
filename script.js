@@ -85,4 +85,14 @@ function calculateAveragePrice() {
 
 calculateAveragePrice();
 
-  
+//Referesh page every 3 seconds
+const refreshTimer = document.getElementById('refresh-timer');
+
+let timerInSeconds = 0;
+
+setInterval(() => {
+  timerInSeconds += 1;
+    if (timerInSeconds >= 3) {
+    window.location.reload();
+  }
+}, 1000);
