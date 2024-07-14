@@ -69,10 +69,10 @@ function randomNumber (2, 6)
     }
 
 //setInterval() for adding an interval
-/* const addShapeIntervalId = setInterval(addShape, 1000);
-function addShape() {
-    if (shapes.length >= maxShapes) {
-      clearInterval(addShapeIntervalId);
+/* const rerenderLast = setInterval(addNewFreelancer, 1000);
+function addNewFreelancer() {
+    if (freelancers.length >= maxFreelancers) {
+      clearInterval(addNewFreelancerIntervalId);
     }
   }
   render();  */

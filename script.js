@@ -15,7 +15,12 @@ body.append(availableString);
 
 //initial Arrrays for the table
 const headers = ['Name', 'Occupation', 'Starting Price'];
-const initialpeople = [{name: 'Alice', occupation:'Writer', price:'$30'},{name:'Bob', occupation:'teacher', price:'$50'},{name:'Carol', occupation:'Programmer', price:'$70'},{name:'Steve', occupation:'Student', price:'$40'},{name:'Jess', occupation:'Student', price:'$30'}]
+const initialpeople = [
+    {name: 'Alice', occupation:'Writer', price:'$30'},
+    {name:'Bob', occupation:'teacher', price:'$50'},
+    {name:'Carol', occupation:'Programmer', price:'$70'},
+    {name:'Steve', occupation:'Student', price:'$40'},
+    {name:'Jess', occupation:'Student', price:'$30'}]
 
 // Function to get a random index excluding the first two
 function getRandomIndex(excludeIndexes, maxIndex) {
@@ -79,3 +84,5 @@ function calculateAveragePrice() {
 }
 
 calculateAveragePrice();
+
+  
